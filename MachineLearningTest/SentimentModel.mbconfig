@@ -43,8 +43,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.79588509014627429,
-        "RuntimeInSeconds": 1.098,
+        "Score": 0.82190638456489551,
+        "RuntimeInSeconds": 0.425,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e7 * e10",
           "e0": {
@@ -67,8 +67,8 @@
             "AddKeyValueAnnotationsAsText": false
           },
           "e7": {
-            "L1Regularization": 0.18426986,
-            "L2Regularization": 0.0500111245,
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.4552654,
             "LabelColumnName": "col1",
             "FeatureColumnName": "Features"
           }
@@ -78,8 +78,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.77049384529138365,
-        "RuntimeInSeconds": 0.62,
+        "Score": 0.82079527345378445,
+        "RuntimeInSeconds": 0.437,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e7 * e10",
           "e0": {
@@ -102,8 +102,8 @@
             "AddKeyValueAnnotationsAsText": false
           },
           "e7": {
-            "L1Regularization": 0.4258325,
-            "L2Regularization": 0.335463524,
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.442331016,
             "LabelColumnName": "col1",
             "FeatureColumnName": "Features"
           }
@@ -113,8 +113,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.70864633749179384,
-        "RuntimeInSeconds": 0.583,
+        "Score": 0.81978517244368343,
+        "RuntimeInSeconds": 0.423,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e7 * e10",
           "e0": {
@@ -137,8 +137,8 @@
             "AddKeyValueAnnotationsAsText": false
           },
           "e7": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 1.0,
+            "L1Regularization": 0.0338700227,
+            "L2Regularization": 0.460174739,
             "LabelColumnName": "col1",
             "FeatureColumnName": "Features"
           }
@@ -147,11 +147,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "FastTreeOva",
-        "Score": 0.67974313459213209,
-        "RuntimeInSeconds": 1.14,
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.81978517244368343,
+        "RuntimeInSeconds": 0.42,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
+          "_SCHEMA_": "e0 * e1 * e2 * e7 * e10",
           "e0": {
             "InputColumnName": "col0",
             "OutputColumnName": "col0"
@@ -171,27 +171,22 @@
             "InputColumnName": "col1",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e3": {
-            "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 18,
-            "NumberOfTrees": 4,
-            "MaximumBinCountPerFeature": 215,
-            "FeatureFraction": 0.99999999,
-            "LearningRate": 0.52962355805121064,
+          "e7": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.475810975,
             "LabelColumnName": "col1",
-            "FeatureColumnName": "Features",
-            "DiskTranspose": false
+            "FeatureColumnName": "Features"
           }
         }
       },
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "FastTreeOva",
-        "Score": 0.66432638232507,
-        "RuntimeInSeconds": 1.992,
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.81978517244368343,
+        "RuntimeInSeconds": 0.429,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
+          "_SCHEMA_": "e0 * e1 * e2 * e7 * e10",
           "e0": {
             "InputColumnName": "col0",
             "OutputColumnName": "col0"
@@ -211,16 +206,11 @@
             "InputColumnName": "col1",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e3": {
-            "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "NumberOfTrees": 4,
-            "MaximumBinCountPerFeature": 254,
-            "FeatureFraction": 1.0,
-            "LearningRate": 0.099999999999999978,
+          "e7": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.4329907,
             "LabelColumnName": "col1",
-            "FeatureColumnName": "Features",
-            "DiskTranspose": false
+            "FeatureColumnName": "Features"
           }
         }
       }
@@ -248,7 +238,7 @@
     "Version": 2,
     "Subsampling": false,
     "Type": "ClassificationTrainingOption",
-    "TrainingTime": 10,
+    "TrainingTime": 300,
     "LabelColumn": "col1",
     "ValidationOption": {
       "Version": 0,
